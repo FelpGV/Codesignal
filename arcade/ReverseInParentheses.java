@@ -1,4 +1,6 @@
-public class reverseInParentheses {
+package arcade;
+
+public class ReverseInParentheses {
     static String solution(String inputString) {
         StringBuilder sb = new StringBuilder(inputString);
         int start = 0;
