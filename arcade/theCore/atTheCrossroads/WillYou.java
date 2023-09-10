@@ -2,7 +2,7 @@ package arcade.theCore.atTheCrossroads;
 
 public class WillYou {
     static boolean solution(boolean young, boolean beautiful, boolean loved) {
-        return (young && beautiful && !loved) || (loved && !young || !beautiful);
+        return (young && beautiful && !loved) || (loved && (!young || !beautiful));
     }
 
     public static void main(String[] args) {
