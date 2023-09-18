@@ -22,10 +22,18 @@ public class RangeBitCount {
         return result;
     }
 
+    static int solution2(int a, int b) {
+        int result = 0;
+        for (int i = a; i <= b; i++) {
+            result += Integer.bitCount(i);
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         int a = 2;
         int b = 7;
-        int solution = solution(a, b);
+        int solution = solution2(a, b);
         System.out.println(solution);
     }
 }
